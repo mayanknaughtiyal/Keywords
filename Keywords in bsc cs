@@ -1,0 +1,100 @@
+COMPUTER: A computer is an electronic device that takes raw data from the user and proceses it. It can be programmed to automatically carry out sequences of logical or arithmetical operations. A computer is mainly devided into three parts- A. Computation-,B.storage,C.Network
+A.1 CPU: A CPU stands for central processing unit, which is the primary component of the computer that acts as its control center.
+
+
+
+A.2 DPU: DPU stands for data processing unit. A DPU is a specialized processor that helps the CPU with tasks like networking, security and storage. A DPU is also called a IPU (infrastructure processing unit) or SmartNIC. leading provideres od DPUs are intel and AMD.
+
+A.3 GPU: GPU stands for graphics processing unit.A GPU is an elecronic circuit that can perform mathmatical calculations at high speed. Computing tasks like graphics rendering, machine learaning (ML), and video editing require the application of similar mathematical operations on a large dataset.
+
+A.4 APU: APU stands for accelerated processing unit. A APU is a processor that combines a CPU(Central Processing Unit) and GPU(Graphics Processing Unit) into a one chip.
+
+A.5 NPU: NPU stands for neural processing unit. A NPU is a specialized procesor that accelerated artificial intelligence (AI) and machine learning (ML) applications.
+
+A.6 TPU: TPU stands for Tensor processing unit. A TPU is a custom made application-specific integrated circuit (ASIC) developed by google to speed up machine learning workload. TPUs are designed for neural networks and are known for their high throughput and parallelism.
+
+A.7 FPGA: A field-programmable gates array (FPGA) is an integrated circuit that can be recognised after manufacturing to suit specific needs. FPGAs are often used in applicatoion that require high data processing ir transactions, such as financial trading, molecular dynamics, bioscience.
+
+
+
+A.8 ASIC: Application-Specific Integrated Circuit is a type of integrated circuit designed for a specific application or function, rather than general purpose use. For example, an ASIC designed for cryptocurrency mining is specially build to perform tha hashing calculations required for mining.
+
+A.9 CISC: A Complex Instruction Set Computer (CISC) processor is a type of computer architecture that uses a large set of instructions to perform complex tasks
+A.10 RISC: Reduced Instruction Set Computer is a microprocessor that uses a small set of simple instruction to perform tasks.
+A.11 RISC-V: RISC-V is an open source instruction set architecture (ISA) that is used to design custom processors for a variety of applications. It is based on principles of reduced instruction set computers (RISC) and is pronounced "risc-five">
+
+A.12 SOC- A system on a chip (SOC) is an integrated circuit that contains most or all of a computer or other electronic system's components on a single chip.
+
+B. MEMORY AND STORAGE- the electronic components that stores the data and instructions for a computer to access quickly. It is used to store information that the computer's processor needs to run application and open files. Memory is what your computer use to store data temporarily, while storage is where you save files permanently.
+
+TYPES-
+B.1 PRIMARY- Also known as main memory, this is the computer's main memory that stores data, programs and instructions that are currently in use like RAM>
+
+B.2 SECONDARY- This type of memory provides permanent storage for data that doesn't erase when the computer is turned off. Its often ussed for backing up data, disaster recovery and storing critical data for long periods of time like harddisk.
+
+
+C. NETWORK- A computer network is a group of devices that exchange data and resources with each other. Network can be connected using cables or wireless media.
+
+C.1 INTERNET- A communication system that connects computers and computer networks all over the world.
+
+C.2 DNS- Domain Name System (DNS) is a network of computers that converts web addresses into IP addresses.
+
+C.3 IP- An Internet Protocol (IP) address is the unique identifying number assigned to every device connected to the internet.
+
+TYPES
+
+PRIVATE- LAN(INTERNET) has 3 types (1) 10.x.y.z (2) 172.x.y.z (3) 192.168.x.y
+
+PUBLIC- WAN(INTERNET)
+
+C.4 MAC- A MAC (Media Access Control) address is a unique identifier for a device's network interface controller (NIC) that is used in network communicaions. It is also known as hardware address, physical address or burned-in address (BIA).
+
+C.4 PORT- Port addressess, or port numbers are 16 bit unsigned integers that are appended to an IP address to direct internet traffic to a specific process or service.
+
+2.OSI- The OSI Model (Open Systems Interconnection Model) is a conceptual framework used to describe the function of networking system.
+
+
+
+BLOCKCHAIN- Blockchain is a decentralized, distributed database technology that stores data in blocks linked together in a chain. It is used to record transacations and track assets in a business network like Bitcoin. Its key features- Transperency, Immutability (can't be deletedor modified without consensus from the network), Security, Decentralization.
+
+
+OS (Operating System)- Operating system is systems software that manages computer hardware and software resources and provide common service for computer programs. It acts as an intermediary between user and computer hardware. Some famous and commonly used operating system are Windows, Mac OS, Linus.
+
+
+KERNEL- The Kernel is a core component of an operating system and serves as the main interface between the computer's physical hardware and processes running on it.
+
+BARE METAL- Bare Metal refers to a computer system or server that runs without a layer of abstraction such as virtulization layer or operating system. In this context, bare metal means the hardware is directly utilized for a single application or workload, allowing for maximum performance and control.
+
+CLOUD COMPUTING- Cloud computing is the delivery of computing resources over the internet, or "the cloud", on-demand and without requiring direct management by the user. TYPES-
+
+a. Private- like openstack
+
+b. public- It has 3 which are- AWS(Amazon Web Service), GCP(Google Cloud Platform), Azure(Microsoft)
+
+VM- A virtual machine (VM) is a software-based computer that acts like a physical computer, but uses virtual resources instead of physical components. VMs can perform many of the same function as a physical computer such as running programs and operating systems, storinf data, and connecting to networks.
+
+ALGORITHM- An algorithm is a set of instruction that a computer follows to perform calculattions or solve problems. Algorithms are finite sets of instruction that are carried out in a specific order.
+
+10.IPv6 - Internet Protocol version 6 (IPv6) is the latest version of internete protocol (IP) and is the successor to IPv4. IPv6 is important because its intended to address the problem of IPv4 address exhaustion and to support growing demand for internet connectivity.
+
+KUBERNETES - kubernetes is open-source software that helps deploy, manage, and scale containerized application and also called k8s.
+
+API - Application Programming interface allow developers to sync data between multiple platforms and can facililate communication among the various microservices in web applications. OR An API (Applicaition Programming Interface) is a bridge between the front end and back end of an applicatioin. While backend developers usually create APIs, front end developers need to know how to use them.
+
+FRONTEND - HTML, CSS, JAVASCRIPT.
+
+BACKEND - FRAMEWORK LIKE PYTHON(django).
+
+BINARY NUMBER - Is in 0's and 1's and can be determined as 2^n.
+
+Size in 2^n a. 2^10 = 1kb b. 2^20 = 1mb c. 2^30 = 1gb and IPv6 is 2^128
+IP address is of 32 bits or 4 bytes like 192.168.x.y each no. takes 8 bits like in this case it has 4 numbers written in form of a.b.x.y and this 8bit (one number) called OCTET.
+
+DEVOPS- DevOps is a software development practice that combines the words "development" and "operation" to describe the process of integrating these two disciplines into a single, continuous process. DevOps can help organizations deliver applications and services faster by:
+Breaking down silos - DevOps unifies people, processes, and technology across traditionally siloed roles like development, IT operations, quality engineering, and security.
+
+Enabling collaboration - DevOps allows coordination and collaboration between teams that have different priorities, tasks and timelines.
+
+Accelerating delivery- DevOps can speed up the delivery of code to production by incorporating automated, prescheduled code tests as the application code is being written or updated.
+
+Improving products - DevOps can help organizations evolve and improve products at a faster pace.
