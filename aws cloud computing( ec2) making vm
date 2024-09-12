@@ -1,0 +1,99 @@
+How to make a vm( virtual machine)=1.make an account on aws,    
+2.select ec2 service,    
+3.inside ec2 make an instance,
+4. For an instance  select an os( operating system),   
+5.make an key pair ( the key pair will automatically be downloaded).  ,
+6 while making key pair select ppk type ,     
+7.an public ip will be generated,   
+8.launch the instance 
+9. Install an putty ( search on google how to download putty for (the operating system you have chosen) and download it, 
+10. After that open the putty and on ssh option paste the public ip from the instance,  
+11.in the aut option select credentials and browse the key pair you have created in instance,   
+12. Now to download a web server open putty and type :-sudo apt update, after that type :-sudo apt Install apache2,   
+13:- to remove the dollar sign type:- sudo su,   
+14:- after that the next step is to type :-/var/www/html/ ,
+15.enter the above and on the next line type index.html, 
+16.after that type :-rm index.html,
+17.enter the above and type :-vi index.html ( by writing this  a new page will appear in which you have to either type html code aur copy paste it from GitHub), 
+18.to run the code type :- control+c ,shift+ ,wq and enter 
+
+
+
+now below are the photos for the same
+<h1><b>Making an account on AWS</b></h1>
+1.Go to ["https://aws.amazon.com/resources/create-account"] and follow the instructions
+
+<h1><b>Starting an EC2 instance</b></h1>
+1. On the AWS dashboard, search for EC2 and click EC2<br><br>
+<img src="https://github.com/user-attachments/assets/b7e4434a-9508-4689-b977-ce510a18a2ae" height="350"><br><br>
+2.Click Launch Instance<br>
+<br>
+<img src="https://github.com/user-attachments/assets/dcda92ae-be51-4e4f-9666-b5c0e69d8bf6" height="350">
+<br><br>
+3.Type your server name and choose the OS you desire (We are choosing Ubuntu for this tutorial)<br><br>
+<img src="https://github.com/user-attachments/assets/b62a061b-e42e-4220-8169-168f8bcd55d6" height="350"><br><br>
+4.In the "Key Pair" section click on "Create new key pair"<br><br>
+<img src="https://github.com/user-attachments/assets/807e5b20-434e-4c81-b5c1-121f6d0bf30c" height="350"><br>
+<br>
+5. Name your key pair and click on .ppk and then create new key (The key pair will get downloaded)<br><br>
+<img src="https://github.com/user-attachments/assets/928dbfce-9039-4185-a67c-0c132c27df33" height="350"><br><br>
+6. In the network section click on "Allow HTTP traffic from the internet"<br><br>
+<img src="https://github.com/user-attachments/assets/568ba0ce-8acc-4621-8f46-933f36f28af5"height="350"><br><br>
+7. Finally click on "Launch Instance"<br><br>
+<img src="https://github.com/user-attachments/assets/8895b2d5-5da8-4b97-b850-9451c10834c3" height="350"><br><br>
+
+
+<h1><b>Installing PuTTY</b></h1>
+Go to ["https://support.bondtech.se/Guide/How%20to%20install%20PuTTY%20in%20Windows/35.html"] and follow the instructions
+
+<h1><b>Setting up PuTTY and the instance</b></h1>
+1.Go on the <b>Instance</b> dashboard, you'll notice that the instance is running and below a public IP address is visible, Copy it<br><br>
+<img src="https://github.com/user-attachments/assets/0987130a-495b-48c3-8296-cc557c458b6e" height="350"><br><br>
+If you open the IP address in your browser you'll notice nothing loads because no server is installed on your Instance as of yet. <br><br>
+2.Now Open PuTTY, You'll notice a space titled "Host Name", Paste the IP address you copied<br><br>
+<img src="https://github.com/user-attachments/assets/1ea35a55-cbba-43ad-8671-0cb0c50065f3" height="350"><br><br>
+3.On the left column, Click <b>"SSH"</b>, then click <b>"Auth"</b>, and click on <b>"Credentials"</b><br><br>
+<img src="https://github.com/user-attachments/assets/c8172836-f9ce-4e74-9529-7900b70a40cf" height="350"><br><br>
+4. Click <b>"Browse"</b> and select the key pair you downloaded and click <b>"Open"</b><br><br>
+<img src="https://github.com/user-attachments/assets/15ec3c9f-055a-4e97-92a2-238f8e4cfee9" height="200"> <img src="https://github.com/user-attachments/assets/715b4f37-2fa5-47c9-9be3-05455d252392" height="200"><img src="https://github.com/user-attachments/assets/c3a79bb6-0c30-443f-828c-57d0b8d5fe9b" height="200"><br><br>
+5. Click accept and in the username type <b>"ubuntu"</b><br> and press <b>ENTER</b><br><br>
+<img src="https://github.com/user-attachments/assets/2abb05a3-a30f-4182-9434-6cfba4f222ad" height="200"><img src="https://github.com/user-attachments/assets/0867165d-60bc-4754-ba9b-3487b98fc5da" height="200">
+
+<h1><b>Using the command line interface</b></h1>
+1. In the command line run the following linux commands in the following order
+
+     sudo su
+     apt update
+It'll update the dependecies
+<br><br>
+2. We need to install <b>apache2</b> HTTP server, for that run the following command
+
+    apt install apache2
+It'll starting install the <b>apache2</b> server on your VM.<br><br>
+
+3. If you go into your browser and search the IP you got earlier now you'll see this<br><br>
+<img src="https://github.com/user-attachments/assets/545391a4-1cc0-4883-95a9-bac98926685d"><br><br>
+
+4. Now back on the PuTTY command line, run these commands
+
+       /var/wwww/html/
+       rm index.html
+       vi index.html
+5.Now you'll be in the edit window, Press <b>I</b> <br><br>
+<img src="https://github.com/user-attachments/assets/f522d15a-8f15-4cdf-a213-0bcd8d22bcba" height="200"><img src="https://github.com/user-attachments/assets/3a946481-f2e4-44c5-9ae7-305eabe4086c" height="200">
+<br><br>
+5. Now you can edit the file, for this tutorial let us simply type "hi" using HTML format<br><br>
+<img src="https://github.com/user-attachments/assets/da18d593-8eb6-4b4c-bd1e-3356ac291f42" height="200">
+<br><br>
+6.Next to save the file, FIrst press <b>Ctrl+C</b> ( This will bring you out of the edit mode), then type <b>:wq</b> to exit the window<br><br>
+<img src="https://github.com/user-attachments/assets/fba1c097-6cb2-4a61-8c94-a640fe6e9e76" height="200"><img src="https://github.com/user-attachments/assets/939c1bc7-9fea-4919-87f6-c08b630a4086" height="200"><img src="https://github.com/user-attachments/assets/c7faabb3-cb7c-433a-a330-00a1239d57e2" height="200">
+<br><br>
+7. Now on the browser, the "hi" is displayed<br><br>
+<img src="https://github.com/user-attachments/assets/af415150-b656-440f-a3b3-71822d8394f3" height="350">
+<br><br>
+Using this method you can connect it to your github too<br><br>
+<h1><b>Closing the Running Instance</b></h1>
+It is always recommended to close the running instance <br><br>
+1.On the Instances dashboard, right click on the running instance and click on <b>"Terminate Running instance"</b>
+<br><br>
+<img src="https://github.com/user-attachments/assets/8dda18a1-4e77-470b-97df-db864eeed026" height ="300"><br><br>
