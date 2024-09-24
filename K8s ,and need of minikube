@@ -1,0 +1,122 @@
+what is k8s?
+
+:- k8s is an open source software or container orchestrao system used to deploy ,scale and manage containers 
+
+more about k8s?
+
+:-K8s, also known as Kubernetes, is an open-source container orchestration system for automating the deployment, scaling, and management of containerized applications.
+
+
+*Key Features:*
+
+1. Container management: Run containers across multiple hosts.
+2. Automated deployment: Roll out new versions, roll back to previous versions.
+3. Scaling: Increase/decrease replica count based on demand.
+4. Self-healing: Automatically restart failed containers.
+5. Resource management: Allocate resources (CPU, memory) to containers.
+6. Service discovery: Manage communication between containers.
+7. Security: Network policies, secret management.
+
+
+*Components:*
+
+1. Pods: Basic execution unit (one or more containers).
+2. Replication Controllers: Manage pod replicas.
+3. Services: Provide network identity and load balancing.
+4. Persistent Volumes: Storage for data persistence.
+5. Deployments: Manage rollouts and rollbacks.
+
+
+*Benefits:*
+
+1. Scalability
+2. High availability
+3. Flexibility
+4. Efficient resource utilization
+5. Simplified management
+
+
+*Use cases:*
+
+1. Web applications
+2. Microservices architecture
+3. Big data processing
+4. Machine learning
+5. Cloud-native applications
+
+
+*Kubernetes Architecture:*
+
+1. Master Node: Controls cluster.
+2. Worker Nodes: Run pods.
+3. pods : inside each node there are one or many pods which contains containers
+
+
+*Popular Kubernetes Tools we use today **
+
+1. kubectl (command-line tool)
+
+** now what is need for k8s?
+to manage ,deploy and scale containers more efficiently than a docker  ***
+
+what is minikube?
+
+minikube is a open source tool use to install k8s on your laptop 
+
+why we use minikube to install k8s in our desktop? 
+
+k8s is not free but minikube mimics k8s cloud computing features and provides k8s several extensions for free and along with it , it is easy to setup
+
+ with the help of minikube we can run k8s applications and learn k8s concepts without cloud cost
+
+ minikube has a single node k8s cluster artitechture although we will add more nodes in future 
+
+ to use minikube you need atleast 2 gb ram and 2 cpu cores 20 gb free disk space  so make your instance accordingly
+
+
+to use minikube :- first of all login on aws and launch an instance 
+while making the instance select 2x t3micro and 33 or more gb storage if required 
+after that connect the instance with putty and install docker 
+after installation of docker call for nginix container 
+after that install minikube on it 
+
+in starting you can add a command so that you remain a user and don't meed to write sudo again and again
+
+
+all the codes for above commands are mentioned below
+
+
+    curl -sL https://github.com/ShubhamTatvamasi/docker-install/raw/master/docker-install.sh | bash
+        sudo usermod -aG docker $USER
+
+       $ newgrp docker
+
+sudo snap install kubectl --classic
+
+        kubectl version --client
+
+         curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+ sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+         minikube version
+
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+
+minikube start --driver=docker
+
+minikube status
+
+kubectl cluster-info
+
+Kubectl config view
+
+kubectl get nodes
+
+kubectl get pods
+
+minikube dashboard
+
+kubectl proxy --address='0.0.0.0' --disable-filter=true &
+
+       http://public_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
