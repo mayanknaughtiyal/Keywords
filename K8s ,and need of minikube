@@ -118,4 +118,4 @@ kubectl get pods
 minikube dashboard
 
 kubectl proxy --address='0.0.0.0' --disable-filter=true &
-<img src="https://www.devopsschool.com/blog/wp-content/uploads/2022/12/minikube-architecture-4-1024x683.png"/>
+![Alt text](https://www.devopsschool.com/blog/wp-content/uploads/2022/12/minikube-architecture-4-1024x683.png)
