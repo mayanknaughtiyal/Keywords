@@ -118,5 +118,4 @@ kubectl get pods
 minikube dashboard
 
 kubectl proxy --address='0.0.0.0' --disable-filter=true &
-
-<img src="https://www.google.com/imgres?q=minikube&imgurl=https%3A%2F%2Ffusionauth.io%2Fimg%2Fdocs%2Fget-started%2Fdownload-and-install%2Fkubernetes%2Ffa-minikube.png&imgrefurl=https%3A%2F%2Ffusionauth.io%2Fdocs%2Fget-started%2Fdownload-and-install%2Fkubernetes%2Fminikube&docid=BefTvopqWf4EzM&tbnid=yCGbA3OPIFwB8M&vet=12ahUKEwjK2rnGut2IAxXeVmwGHc1IM28QM3oECGYQAA..i&w=1020&h=914&hcb=2&ved=2ahUKEwjK2rnGut2IAxXeVmwGHc1IM28QM3oECGYQAA"\>
+<img src="https://www.devopsschool.com/blog/wp-content/uploads/2022/12/minikube-architecture-4-1024x683.png"/>
