@@ -1,14 +1,5 @@
 what is docker :-docker is a containerization platform that enables developers to package, ship, and run applications in containers, which are lightweight and portable encapsulations of software and its dependencies.
 
-
-*Key Features:*
-
-1. Containerization: Run multiple isolated applications on a single host.
-2. Lightweight: Containers share the host's kernel, reducing overhead.
-3. Portable: Containers run consistently across
-[18/09, 9:32 am] Meta AI: Docker is a containerization platform that enables developers to package, ship, and run applications in containers, which are lightweight and portable encapsulations of software and its dependencies.
-
-
 *Key Features:*
 
 1. Containerization: Run multiple isolated applications on a single host.
