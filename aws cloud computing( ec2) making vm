@@ -1,4 +1,4 @@
-How to make a vm( virtual machine)=1.make an account on aws,    
+# How to make a vm( virtual machine)=1.make an account on aws,    
 2.select ec2 service,    
 3.inside ec2 make an instance,
 4. For an instance  select an os( operating system),   
@@ -16,6 +16,7 @@ How to make a vm( virtual machine)=1.make an account on aws,
 16.after that type :-rm index.html,
 17.enter the above and type :-vi index.html ( by writing this  a new page will appear in which you have to either type html code aur copy paste it from GitHub), 
 18.to run the code type :- control+c ,shift+ ,wq and enter 
+
 
 
 
