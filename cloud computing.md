@@ -420,4 +420,3 @@ htop
 ```
 seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
 ```
-![Image description](https://github.com/mayanknaughtiyal/Keywords/raw/main/IMG-20241105-WA0000.jpg)
