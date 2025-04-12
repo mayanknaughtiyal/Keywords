@@ -1,94 +1,174 @@
-COMPUTER: A computer is an electronic device that takes raw data from the user and proceses it. It can be programmed to automatically carry out sequences of logical or arithmetical operations. A computer is mainly devided into three parts- A. Computation-,B.storage,C.Network
-A.1 CPU: A CPU stands for central processing unit, which is the primary component of the computer that acts as its control center.
+📘 Computer Fundamentals – Deep Tech Overview
+🖥️ What is a Computer?
+A computer is a programmable electronic device capable of accepting input, processing it using a defined set of instructions, storing the result, and outputting it to the user. It automates complex computations and logical operations using hardware and software components. A modern computer typically comprises three primary domains:
 
+A. Computation
 
+B. Memory & Storage
 
-A.2 DPU: DPU stands for data processing unit. A DPU is a specialized processor that helps the CPU with tasks like networking, security and storage. A DPU is also called a IPU (infrastructure processing unit) or SmartNIC. leading provideres od DPUs are intel and AMD.
+C. Networking
 
-A.3 GPU: GPU stands for graphics processing unit.A GPU is an elecronic circuit that can perform mathmatical calculations at high speed. Computing tasks like graphics rendering, machine learaning (ML), and video editing require the application of similar mathematical operations on a large dataset.
+🧠 A. Computation (Processing Units)
+A.1 CPU – Central Processing Unit
+The CPU is the core of any computing device, often referred to as the "brain" of the system. It carries out instructions from programs via the fetch-decode-execute cycle. Architectures include CISC (e.g., x86) and RISC (e.g., ARM).
 
-A.4 APU: APU stands for accelerated processing unit. A APU is a processor that combines a CPU(Central Processing Unit) and GPU(Graphics Processing Unit) into a one chip.
+A.2 DPU – Data Processing Unit
+A DPU (also known as SmartNIC or IPU) is a dedicated processor designed for data-centric tasks such as packet routing, encryption, and workload isolation in data centers. Prominent in cloud infrastructure, DPUs offload tasks from CPUs and improve security and performance.
 
-A.5 NPU: NPU stands for neural processing unit. A NPU is a specialized procesor that accelerated artificial intelligence (AI) and machine learning (ML) applications.
+Vendors: NVIDIA (BlueField), Intel, AMD (Pensando)
 
-A.6 TPU: TPU stands for Tensor processing unit. A TPU is a custom made application-specific integrated circuit (ASIC) developed by google to speed up machine learning workload. TPUs are designed for neural networks and are known for their high throughput and parallelism.
+A.3 GPU – Graphics Processing Unit
+A GPU is optimized for parallel processing and matrix math operations, critical for rendering graphics and accelerating machine learning (ML) and scientific computations (e.g., CUDA, OpenCL).
 
-A.7 FPGA: A field-programmable gates array (FPGA) is an integrated circuit that can be recognised after manufacturing to suit specific needs. FPGAs are often used in applicatoion that require high data processing ir transactions, such as financial trading, molecular dynamics, bioscience.
+A.4 APU – Accelerated Processing Unit
+An APU integrates both CPU and GPU on a single chip, enhancing performance and energy efficiency, especially in compact systems like laptops and consoles (e.g., AMD Ryzen APUs).
 
+A.5 NPU – Neural Processing Unit
+An NPU is specialized for deep learning operations like convolutional neural networks (CNNs), providing high throughput and lower power consumption for AI workloads on edge devices.
 
+A.6 TPU – Tensor Processing Unit
+A TPU is a Google-designed ASIC (Application-Specific Integrated Circuit) built to accelerate TensorFlow operations. It is highly efficient for matrix multiplication, the backbone of deep learning.
 
-A.8 ASIC: Application-Specific Integrated Circuit is a type of integrated circuit designed for a specific application or function, rather than general purpose use. For example, an ASIC designed for cryptocurrency mining is specially build to perform tha hashing calculations required for mining.
+A.7 FPGA – Field-Programmable Gate Array
+FPGAs are customizable chips that can be reprogrammed after manufacturing. They excel in low-latency and real-time environments like high-frequency trading, signal processing, and robotics.
 
-A.9 CISC: A Complex Instruction Set Computer (CISC) processor is a type of computer architecture that uses a large set of instructions to perform complex tasks
-A.10 RISC: Reduced Instruction Set Computer is a microprocessor that uses a small set of simple instruction to perform tasks.
-A.11 RISC-V: RISC-V is an open source instruction set architecture (ISA) that is used to design custom processors for a variety of applications. It is based on principles of reduced instruction set computers (RISC) and is pronounced "risc-five">
+A.8 ASIC – Application-Specific Integrated Circuit
+ASICs are purpose-built chips designed for specific tasks like Bitcoin mining (e.g., SHA-256 hashing). They offer performance and energy efficiency over general-purpose processors but lack flexibility.
 
-A.12 SOC- A system on a chip (SOC) is an integrated circuit that contains most or all of a computer or other electronic system's components on a single chip.
+A.9 CISC – Complex Instruction Set Computing
+CISC processors like x86 use a wide set of instructions that can perform complex tasks in a single command, often reducing code size at the expense of execution speed.
 
-B. MEMORY AND STORAGE- the electronic components that stores the data and instructions for a computer to access quickly. It is used to store information that the computer's processor needs to run application and open files. Memory is what your computer use to store data temporarily, while storage is where you save files permanently.
+A.10 RISC – Reduced Instruction Set Computing
+RISC architectures (like ARM) use simpler instructions executed rapidly. RISC chips are energy-efficient, widely used in smartphones, embedded devices, and low-power environments.
 
-TYPES-
-B.1 PRIMARY- Also known as main memory, this is the computer's main memory that stores data, programs and instructions that are currently in use like RAM>
+A.11 RISC-V – Open-Source ISA
+RISC-V is an open-source ISA promoting customizable chip design. It’s modular, royalty-free, and increasingly adopted in embedded systems, IoT, and academic research.
 
-B.2 SECONDARY- This type of memory provides permanent storage for data that doesn't erase when the computer is turned off. Its often ussed for backing up data, disaster recovery and storing critical data for long periods of time like harddisk.
+A.12 SoC – System on Chip
+An SoC integrates CPU, GPU, memory controller, I/O, and other peripherals into a single silicon die, optimizing for power, size, and efficiency. Example: Apple M-series chips.
 
+🧬 B. Memory and Storage
+Memory and storage systems retain data either temporarily or permanently.
 
-C. NETWORK- A computer network is a group of devices that exchange data and resources with each other. Network can be connected using cables or wireless media.
+B.1 Primary Memory (Volatile)
+RAM (Random Access Memory): Fast, temporary storage for active processes and data.
 
-C.1 INTERNET- A communication system that connects computers and computer networks all over the world.
+Cache Memory: Small, fast memory inside the CPU for frequently accessed data.
 
-C.2 DNS- Domain Name System (DNS) is a network of computers that converts web addresses into IP addresses.
+B.2 Secondary Storage (Non-Volatile)
+HDDs, SSDs: Store persistent data like files, OS, backups.
 
-C.3 IP- An Internet Protocol (IP) address is the unique identifying number assigned to every device connected to the internet.
+NVMe Storage: High-speed SSD interface offering low latency and high throughput.
 
-TYPES
+Optane Memory: Intel’s hybrid memory/storage tech bridging RAM and SSD.
 
-PRIVATE- LAN(INTERNET) has 3 types (1) 10.x.y.z (2) 172.x.y.z (3) 192.168.x.y
+🌐 C. Networking
+Computer networking involves interconnecting devices to share data, applications, and services.
 
-PUBLIC- WAN(INTERNET)
+C.1 Internet
+A global system of interconnected networks using TCP/IP to enable communication and data exchange.
 
-C.4 MAC- A MAC (Media Access Control) address is a unique identifier for a device's network interface controller (NIC) that is used in network communicaions. It is also known as hardware address, physical address or burned-in address (BIA).
+C.2 DNS – Domain Name System
+Maps human-readable domain names to IP addresses (e.g., google.com → 142.250.190.14). Acts like the internet’s phonebook.
 
-C.4 PORT- Port addressess, or port numbers are 16 bit unsigned integers that are appended to an IP address to direct internet traffic to a specific process or service.
+C.3 IP – Internet Protocol
+IPv4: 32-bit addressing (e.g., 192.168.1.1).
 
-2.OSI- The OSI Model (Open Systems Interconnection Model) is a conceptual framework used to describe the function of networking system.
+IPv6: 128-bit addressing (e.g., 2001:0db8:85a3::8a2e:0370:7334) solving IP exhaustion.
 
+IP Address Types:
+Private (e.g., 10.x.x.x, 192.168.x.x)
 
+Public (used on the WAN/Internet)
 
-BLOCKCHAIN- Blockchain is a decentralized, distributed database technology that stores data in blocks linked together in a chain. It is used to record transacations and track assets in a business network like Bitcoin. Its key features- Transperency, Immutability (can't be deletedor modified without consensus from the network), Security, Decentralization.
+C.4 MAC – Media Access Control
+Hardware address uniquely identifying a device’s NIC (e.g., 00:1A:2B:3C:4D:5E). Essential for LAN-level communications.
 
+C.5 Port Numbers
+Used in TCP/UDP networking to identify specific applications/services. Example: HTTP uses port 80, HTTPS uses port 443.
 
-OS (Operating System)- Operating system is systems software that manages computer hardware and software resources and provide common service for computer programs. It acts as an intermediary between user and computer hardware. Some famous and commonly used operating system are Windows, Mac OS, Linus.
+C.6 OSI Model – Open Systems Interconnection
+A 7-layer abstraction model:
 
+Physical
 
-KERNEL- The Kernel is a core component of an operating system and serves as the main interface between the computer's physical hardware and processes running on it.
+Data Link
 
-BARE METAL- Bare Metal refers to a computer system or server that runs without a layer of abstraction such as virtulization layer or operating system. In this context, bare metal means the hardware is directly utilized for a single application or workload, allowing for maximum performance and control.
+Network
 
-CLOUD COMPUTING- Cloud computing is the delivery of computing resources over the internet, or "the cloud", on-demand and without requiring direct management by the user. TYPES-
+Transport
 
-a. Private- like openstack
+Session
 
-b. public- It has 3 which are- AWS(Amazon Web Service), GCP(Google Cloud Platform), Azure(Microsoft)
+Presentation
 
-VM- A virtual machine (VM) is a software-based computer that acts like a physical computer, but uses virtual resources instead of physical components. VMs can perform many of the same function as a physical computer such as running programs and operating systems, storinf data, and connecting to networks.
+Application
 
-ALGORITHM- An algorithm is a set of instruction that a computer follows to perform calculattions or solve problems. Algorithms are finite sets of instruction that are carried out in a specific order.
+⛓️ Blockchain
+A blockchain is a cryptographically secure, decentralized, and immutable ledger technology. Common in cryptocurrencies (e.g., Bitcoin, Ethereum), supply chains, and smart contracts.
 
-10.IPv6 - Internet Protocol version 6 (IPv6) is the latest version of internete protocol (IP) and is the successor to IPv4. IPv6 is important because its intended to address the problem of IPv4 address exhaustion and to support growing demand for internet connectivity.
+🖥️ Operating System (OS)
+An OS manages hardware resources and provides a user interface. It abstracts hardware complexity for application development.
 
-KUBERNETES - kubernetes is open-source software that helps deploy, manage, and scale containerized application and also called k8s.
+Popular OS:
 
-API - Application Programming interface allow developers to sync data between multiple platforms and can facililate communication among the various microservices in web applications. OR An API (Applicaition Programming Interface) is a bridge between the front end and back end of an applicatioin. While backend developers usually create APIs, front end developers need to know how to use them.
+Windows
 
-FRONTEND - HTML, CSS, JAVASCRIPT.
+Linux (Ubuntu, Red Hat)
 
-BACKEND - FRAMEWORK LIKE PYTHON(django).
+macOS
 
-BINARY NUMBER - Is in 0's and 1's and can be determined as 2^n.
+Kernel
+The kernel is the core component of an OS that manages system calls, memory, CPU scheduling, and hardware communication.
 
-Size in 2^n a. 2^10 = 1kb b. 2^20 = 1mb c. 2^30 = 1gb and IPv6 is 2^128
-IP address is of 32 bits or 4 bytes like 192.168.x.y each no. takes 8 bits like in this case it has 4 numbers written in form of a.b.x.y and this 8bit (one number) called OCTET.
+Bare Metal
+Refers to running workloads directly on hardware without an OS or hypervisor layer. Useful in performance-critical and embedded systems.
 
-DEVOPS- DevOps is a software development practice that combines the words "development" and "operation" to describe the process of integrating these two disciplines into a single, continuous process. DevOps can help organizations deliver applications and services faster by:
-Breaking down silos - DevOps unifies people, processes, and technology across traditionally siloed roles like development
+☁️ Cloud Computing
+Delivery of computing services over the internet. On-demand, scalable, and metered usage.
+
+Types:
+Private Cloud – Managed internally (e.g., OpenStack)
+
+Public Cloud – AWS, Azure, GCP
+
+Hybrid Cloud – Combines both
+
+VM – Virtual Machine
+Software emulation of a physical machine. VMs run guest OSs and apps independently on shared hardware via a hypervisor (e.g., VMware, KVM).
+
+🧮 Algorithms
+A finite set of logical steps to solve a problem or perform computations. Examples: sorting, searching, pathfinding (e.g., Dijkstra's algorithm).
+
+📦 Kubernetes (K8s)
+Open-source orchestration platform for managing containerized applications (e.g., Docker). Provides auto-scaling, self-healing, service discovery, and rolling updates.
+
+🔌 API – Application Programming Interface
+A software bridge enabling communication between different software components or services. Used heavily in microservices architecture and web dev.
+
+Frontend Tech:
+HTML, CSS, JavaScript
+
+Backend Frameworks:
+Python (Django), Node.js, Ruby on Rails
+
+🔢 Binary Numbers and Sizes
+Binary system: Base-2, using 0 and 1
+
+Conversion: 2^10 = 1KB, 2^20 = 1MB, 2^30 = 1GB
+
+IPv4: 32 bits = 4 octets (e.g., 192.168.0.1)
+
+🚀 DevOps
+A methodology that merges software development and IT operations to improve the deployment pipeline and application reliability.
+
+Key DevOps Principles:
+
+CI/CD (Continuous Integration/Delivery)
+
+Infrastructure as Code (IaC)
+
+Monitoring & Logging
+
+Automation (e.g., Jenkins, Ansible)
+
